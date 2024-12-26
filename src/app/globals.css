@@ -3,25 +3,66 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --bounce-timing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-gradient-to-br from-purple-50 to-pink-50 text-gray-900 font-sans leading-relaxed min-h-screen;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+section {
+  @apply mb-16 p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1;
+}
+
+h1, h2 {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 font-extrabold tracking-tight;
+}
+
+h1 {
+  @apply text-4xl md:text-6xl;
+}
+
+h2 {
+  @apply text-3xl text-center mb-8;
+}
+
+.hero {
+  @apply flex flex-col md:flex-row items-center justify-between gap-8 space-y-6 md:space-y-0;
+}
+
+.hero-image {
+  @apply w-full md:w-1/2 mx-auto;
+}
+
+.hero-content {
+  @apply md:w-1/2 text-center md:text-left space-y-4;
+}
+
+.comedy-shows .show-card {
+  @apply bg-pink-50 hover:bg-pink-100 transition-colors duration-300 rounded-xl;
+}
+
+.awards .award-card {
+  @apply bg-yellow-50 hover:bg-yellow-100 transition-colors duration-300 rounded-xl;
+}
+
+.btn {
+  @apply inline-block px-6 py-3 rounded-full transition-all duration-500 ease-[var(--bounce-timing)] transform hover:-translate-y-1;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-pink-500 to-purple-500 text-white hover:from-pink-600 hover:to-purple-600 hover:shadow-lg hover:shadow-pink-500/20;
+}
+
+.footer {
+  @apply w-full bg-white/90 backdrop-blur-sm border-t border-gray-200 py-6 mt-16;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
 }
