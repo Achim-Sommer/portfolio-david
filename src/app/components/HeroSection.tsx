@@ -73,7 +73,7 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            Comedian • Entertainer • Geschichtenerzähler
+            Comedian • Entertainer • Schauspieler
           </motion.p>
         </motion.div>
         <motion.p 
