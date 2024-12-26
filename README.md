@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# David Anschütz - Portfolio Website
 
-## Getting Started
+## Überblick
 
-First, run the development server:
+Diese Portfolio-Website präsentiert die Arbeit und Leistungen von David Anschütz, einem Comedian und Künstler. Die Website wurde mit Next.js und TypeScript entwickelt und nutzt moderne Web-Technologien für ein responsives und ansprechendes Design.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologien
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Next.js](https://nextjs.org/) (App Router)
+- TypeScript
+- Tailwind CSS
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Funktionen
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Responsive Design
+- Hero-Sektion mit Showreel
+- Comedy Shows Übersicht
+- Auszeichnungen und Erfolge
+- Impressum-Seite
 
-## Learn More
+## Voraussetzungen
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js (empfohlen: neueste LTS-Version)
+- npm oder yarn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Lokale Entwicklung
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Repository klonen
+2. Abhängigkeiten installieren:
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. Entwicklungsserver starten:
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Öffnen Sie [http://localhost:3000](http://localhost:3000) in Ihrem Browser
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+Das Projekt ist für eine einfache Bereitstellung auf Vercel optimiert. Weitere Informationen finden Sie in der [Next.js Deployment-Dokumentation](https://nextjs.org/docs/app/building-your-application/deploying).
