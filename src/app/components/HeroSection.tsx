@@ -22,24 +22,24 @@ export default function HeroSection() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-purple-50/70 via-pink-50/70 to-white/90 backdrop-blur-[2px]" />
       </div>
-      <motion.div 
-        className="absolute right-0 bottom-0 md:w-1/2 h-[80%] pointer-events-none"
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 0.3 }}
-      >
-        <Image
-          src="/2_Startseite_Anschuetz_trans.png"
-          alt="David Anschütz"
-          width={2712}
-          height={2309}
-          priority
-          className="object-contain w-full h-full floating"
-          unoptimized
-        />
-      </motion.div>
       <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-center justify-center">
         <div className="hero-content w-full md:w-1/2 flex flex-col items-center md:items-start">
+        <motion.div
+          className="md:absolute md:right-0 md:bottom-0 w-full md:w-1/2 h-[50vh] md:h-[80%] pointer-events-none order-first md:order-none"
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
+          <Image
+            src="/2_Startseite_Anschuetz_trans.png"
+            alt="David Anschütz"
+            width={2712}
+            height={2309}
+            priority
+            className="object-contain w-full h-full floating"
+            unoptimized
+          />
+        </motion.div>
         <motion.div className="space-y-4">
           <div className="relative inline-block">
             <motion.h1 
