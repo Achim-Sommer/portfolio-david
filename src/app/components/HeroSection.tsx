@@ -22,8 +22,8 @@ export default function HeroSection() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-purple-50/70 via-pink-50/70 to-white/90 backdrop-blur-[2px]" />
       </div>
-      <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-center justify-center">
-        <div className="hero-content w-full md:w-1/2 flex flex-col items-center md:items-start">
+      <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-start justify-center">
+        <div className="hero-content w-full md:w-1/2 flex flex-col items-start">
         <motion.div
           className="md:absolute md:right-0 md:bottom-0 w-full md:w-1/2 h-[50vh] md:h-[80%] pointer-events-none order-first md:order-none"
           initial={{ opacity: 0, x: 100 }}
@@ -46,7 +46,7 @@ export default function HeroSection() {
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="text-center md:text-left bg-gradient-to-r from-pink-600 to-purple-600 text-transparent bg-clip-text"
+              className="text-left bg-gradient-to-r from-pink-600 to-purple-600 text-transparent bg-clip-text"
             >
               David Anschütz
             </motion.h1>
@@ -64,7 +64,7 @@ export default function HeroSection() {
                 delay: 0.8
               }}
             >
-              🎭
+              😂
             </motion.div>
           </div>
           <motion.p 
@@ -77,7 +77,7 @@ export default function HeroSection() {
           </motion.p>
         </motion.div>
         <motion.p 
-          className="max-w-2xl mx-auto md:mx-0 text-lg leading-relaxed text-center md:text-left"
+          className="max-w-2xl text-lg leading-relaxed text-left"
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
